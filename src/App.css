@@ -1,0 +1,97 @@
+/***CSS 3 VARIABLER***/
+:root {
+    --green: #6aaf09;
+    --grey: #f0f0f0;
+}
+
+/***SCROLL EFFECT + CUSTOM ANCHOR TAG****/
+html {
+  scroll-behavior: smooth;
+}
+
+.unactive {
+  color: darkgray
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -64px; /*Højden på navbar*/
+  visibility: hidden;
+}
+/*****TEXT FARVER****/
+.text-green {
+    color: var(--green);
+}
+/***SECTIONS MED CLASSNAME GREY*/
+section.grey {
+    background-color: var(--grey);
+}
+
+/***SECTIONS MED CLASSNAME GREEN***/
+section.green{
+    background-color: var(--green);
+}
+
+/****KNAPPER****/
+.btn-primary {
+    background-color: var(--green) !important;
+    border-color: var(--green) !important;
+}
+
+
+/******HEADER*******/
+.headerStyle {
+  background-image: url("./images/banner-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.imgBannerStyle {
+  visibility: hidden; /***For at banneret for samme størrelse som billedet****/
+}
+
+.toastStyle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 0) 75%
+  );
+
+  top: 0;
+}
+
+/****SERVICES****/
+.img-style {
+  border-radius: 50%;
+  border: 7px solid #79b72d;
+}
+
+/****REVIEWS****/
+.reviewHolderStyle {
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.reviewStyle {
+  height: 200px;
+}
+
+/****FOOTER****/
+.soMeIcon {
+  color: var(--green);
+  border-radius: 50%;
+  background-color: #474747;
+  padding: 8px;
+  margin: 0 20px; 
+  font-size: 1.2rem;
+  box-sizing: unset;
+}
